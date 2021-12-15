@@ -10,7 +10,7 @@
     />
     <button @click="clearOutputHistory">Clear</button>
     <table>
-      <tr>
+      <tr v-if="hasOutputHistory">
         <th>event</th>
         <th>key</th>
         <th>keyCode</th>
@@ -33,6 +33,12 @@ export default {
       input: '',
       outputHistory: [],
     };
+  },
+
+  computed: {
+    hasOutputHistory: function () {
+      return this.outputHistory.length > 0;
+    }
   },
 
   methods: {
