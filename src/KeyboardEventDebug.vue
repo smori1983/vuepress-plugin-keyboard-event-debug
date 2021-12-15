@@ -17,10 +17,10 @@
         <th>text</th>
       </tr>
       <tr v-for="item in outputHistory">
-        <td>{{ item.phase }}</td>
-        <td>{{ item.key }}</td>
-        <td>{{ item.keyCode }}</td>
-        <td>{{ item.text }}</td>
+        <td v-html="item.phase"></td>
+        <td v-html="item.key"></td>
+        <td v-html="item.keyCode"></td>
+        <td v-html="item.text"></td>
       </tr>
     </table>
   </div>
