@@ -9,8 +9,8 @@
       @keyup="registerKeyUp($event)"
     />
     <button @click="clearOutputHistory">Clear</button>
-    <table>
-      <tr v-if="hasOutputHistory">
+    <table v-if="hasOutputHistory">
+      <tr>
         <th>event</th>
         <th>key</th>
         <th>keyCode</th>
