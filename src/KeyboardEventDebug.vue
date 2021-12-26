@@ -68,7 +68,7 @@ export default {
 };
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 .debug-block {
   input {
     cursor: text;
