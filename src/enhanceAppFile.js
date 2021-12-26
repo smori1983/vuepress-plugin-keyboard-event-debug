@@ -1,5 +1,5 @@
 import KeyboardEventDebug from './KeyboardEventDebug';
 
 export default ({ Vue }) => {
-  Vue.component('KeyboardEventDebug', KeyboardEventDebug);
+  Vue.component('PluginKeyboardEventDebug', KeyboardEventDebug);
 };
