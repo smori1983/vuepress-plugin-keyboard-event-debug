@@ -16,7 +16,7 @@
         <th>keyCode</th>
         <th>text</th>
       </tr>
-      <tr v-for="item in outputHistory">
+      <tr v-for="item in outputHistory" :class="item.phase">
         <td>{{ item.phase }}</td>
         <td>{{ item.key }}</td>
         <td>{{ item.keyCode }}</td>
@@ -94,6 +94,14 @@ export default {
     &:hover {
       color: $textColor;
       background-color: lighten($accentColor, 93%);
+    }
+  }
+  table {
+    tr.keydown {
+      background-color: #dddddd;
+    }
+    tr.keyup {
+      background-color: #eeeeee;
     }
   }
 }
