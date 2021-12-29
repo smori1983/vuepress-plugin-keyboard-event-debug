@@ -8,15 +8,15 @@
       @keydown="registerKeyDown($event)"
       @keyup="registerKeyUp($event)"
     />
-    <button class="clear" @click="clearOutputHistory">Clear</button>
-    <table v-if="hasOutputHistory">
+    <button class="clear" @click="clearHistory">Clear</button>
+    <table v-if="hasHistory">
       <tr>
         <th>event</th>
         <th>key</th>
         <th>keyCode</th>
         <th>text</th>
       </tr>
-      <tr v-for="item in outputHistory" :class="item.event">
+      <tr v-for="item in history" :class="item.event">
         <td>{{ item.event }}</td>
         <td>{{ item.key }}</td>
         <td>{{ item.keyCode }}</td>
@@ -31,19 +31,19 @@ export default {
   data() {
     return {
       input: '',
-      outputHistory: [],
+      history: [],
     };
   },
 
   computed: {
-    hasOutputHistory: function () {
-      return this.outputHistory.length > 0;
+    hasHistory: function () {
+      return this.history.length > 0;
     }
   },
 
   methods: {
     registerKeyDown(event) {
-      this.outputHistory.unshift({
+      this.history.unshift({
         event: 'keydown',
         key: event.key,
         keyCode: event.keyCode,
@@ -52,7 +52,7 @@ export default {
     },
 
     registerKeyUp(event) {
-      this.outputHistory.unshift({
+      this.history.unshift({
         event: 'keyup',
         key: event.key,
         keyCode: event.keyCode,
@@ -60,9 +60,9 @@ export default {
       });
     },
 
-    clearOutputHistory() {
+    clearHistory() {
       this.input = '';
-      this.outputHistory = [];
+      this.history = [];
     },
   },
 };
