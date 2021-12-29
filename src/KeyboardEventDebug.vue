@@ -8,7 +8,7 @@
       @keydown="registerKeyDown($event)"
       @keyup="registerKeyUp($event)"
     />
-    <button @click="clearOutputHistory">Clear</button>
+    <button class="clear" @click="clearOutputHistory">Clear</button>
     <table v-if="hasOutputHistory">
       <tr>
         <th>event</th>
@@ -70,7 +70,7 @@ export default {
 
 <style lang="stylus" scoped>
 .debug-block {
-  input {
+  .input {
     cursor: text;
     width: 30rem;
     height: 2rem;
@@ -80,7 +80,7 @@ export default {
     font-size: 0.9rem;
     padding: 0 0.5rem;
   }
-  button {
+  .clear {
     cursor: pointer;
     height: 2rem;
     line-height: 2rem;
