@@ -16,8 +16,8 @@
         <th>keyCode</th>
         <th>text</th>
       </tr>
-      <tr v-for="item in outputHistory" :class="item.phase">
-        <td>{{ item.phase }}</td>
+      <tr v-for="item in outputHistory" :class="item.event">
+        <td>{{ item.event }}</td>
         <td>{{ item.key }}</td>
         <td>{{ item.keyCode }}</td>
         <td>{{ item.text }}</td>
@@ -44,7 +44,7 @@ export default {
   methods: {
     registerKeyDown(event) {
       this.outputHistory.unshift({
-        phase: 'keydown',
+        event: 'keydown',
         key: event.key,
         keyCode: event.keyCode,
         text: this.input,
@@ -53,7 +53,7 @@ export default {
 
     registerKeyUp(event) {
       this.outputHistory.unshift({
-        phase: 'keyup',
+        event: 'keyup',
         key: event.key,
         keyCode: event.keyCode,
         text: this.input,
