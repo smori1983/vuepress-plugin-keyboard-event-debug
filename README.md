@@ -16,4 +16,4 @@ See: `example/README.md`.
 
 ## Capture
 
-![](./doc/capture.01.png)
+![](https://cdn.jsdelivr.net/gh/smori1983/vuepress-plugin-keyboard-event-debug@master/doc/capture.01.png)
