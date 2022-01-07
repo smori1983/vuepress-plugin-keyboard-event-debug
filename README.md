@@ -3,6 +3,19 @@
 Debugging keyboard events (especially for Japanese IME).
 
 
+## Usage
+
+`.vuepress/config.js`
+
+```js
+module.exports = {
+  plugins: [
+    ['keyboard-event-debug'],
+  ],
+};
+```
+
+
 ## Predefined global component
 
 In arbitrary markdown file,
