@@ -12,3 +12,8 @@ In arbitrary markdown file,
 ```
 
 See: `example/README.md`.
+
+
+## Capture
+
+![](./doc/capture.01.png)
