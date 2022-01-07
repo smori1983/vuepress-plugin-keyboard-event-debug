@@ -8,7 +8,7 @@ Debugging keyboard events (especially for Japanese IME).
 In arbitrary markdown file,
 
 ```html
-<PluginKeyboardEventDebug />
+<PluginKeyboardEventDebug/>
 ```
 
 See: `example/README.md`.
