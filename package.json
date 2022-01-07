@@ -1,5 +1,5 @@
 {
-  "name": "vuepress-plugin-enter-key-debug",
+  "name": "vuepress-plugin-keyboard-event-debug",
   "version": "1.0.0",
   "description": "Debugging keyboard events (especially for Japanese IME).",
   "main": "src/index.js",
