@@ -1,7 +1,7 @@
 {
   "name": "vuepress-plugin-enter-key-debug",
   "version": "0.1.0",
-  "description": "",
+  "description": "Debugging keyboard events (especially for Japanese IME).",
   "main": "src/index.js",
   "scripts": {
     "dev": "vuepress dev example/",
@@ -14,6 +14,21 @@
     "vuepress": "^1.8.2",
     "vuepress-types": "^0.9.4"
   },
+  "files": [
+    "src/**",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE.txt"
+  ],
   "author": "Shinichiro MORI",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "vuepress",
+    "vuepress-plugin"
+  ],
+  "homepage": "https://github.com/smori1983/vuepress-plugin-keyboard-event-debug",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smori1983/vuepress-plugin-keyboard-event-debug.git"
+  }
 }
