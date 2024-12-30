@@ -29,6 +29,6 @@
   "homepage": "https://github.com/smori1983/vuepress-plugin-keyboard-event-debug",
   "repository": {
     "type": "git",
-    "url": "https://github.com/smori1983/vuepress-plugin-keyboard-event-debug.git"
+    "url": "git+https://github.com/smori1983/vuepress-plugin-keyboard-event-debug.git"
   }
 }
